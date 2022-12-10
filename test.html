@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play sound with JavaScript  </title>
+</head>
+<body>
+
+   <button id="play">Access Granted</button>
+   <script>
+        let play = document.getElementById("play");
+            function playMusic() {
+             let audio = new Audio("r.mp3");
+             audio.play()
+          }
+          play.addEventListener("click", playMusic);
+   </script>
+
+   <button id="play1">Access Denied</button>
+   <script>
+        let play1 = document.getElementById("play1");
+            function playMusic() {
+             let audio = new Audio("l.mp3");
+             audio.play()
+          }
+          play1.addEventListener("click", playMusic);
+   </script>
+
+</body>
+</html>
